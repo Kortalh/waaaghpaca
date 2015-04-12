@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'wpca-init',
+    modulePrefix: 'wpca',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
