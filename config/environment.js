@@ -43,5 +43,16 @@ module.exports = function(environment) {
 
   }
 
+  // Allow external sources; specifically, livereload & google fonts
+  ENV.contentSecurityPolicy = {
+    'default-src': "'none'",
+    'script-src': "'self' 'unsafe-eval' server.kortalh.com:35729 http://*.googleapis.com http://maps.gstatic.com",
+    'font-src': "'self' data: http://fonts.gstatic.com",
+    'connect-src': "'self' ws://server.kortalh.com:35729 http://maps.gstatic.com",
+    'img-src': "'self' http://*.googleapis.com http://maps.gstatic.com http://csi.gstatic.com",
+    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maps.gstatic.com",
+    'media-src': "'self'"
+  };
+
   return ENV;
 };
