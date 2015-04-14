@@ -1,0 +1,80 @@
+
+// @font-face {
+// 	font-family: 'monsterama';
+// 	src: url('/assets/fonts/old/monsterama.eot');
+// 	src: url('/assets/fonts/old/monsterama.eot?#iefix') format('embedded-opentype'),
+// 		 url('/assets/fonts/old/monsterama.woff2') format('woff2'),
+// 		 url('/assets/fonts/old/monsterama.woff') format('woff'),
+// 		 url('/assets/fonts/old/monsterama.ttf') format('truetype'),
+// 		 url('/assets/fonts/old/monsterama.svg#monsterama') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: 'playtime';
+// 	src: url('/assets/fonts/old/playtime.eot');
+// 	src: url('/assets/fonts/old/playtime.eot?#iefix') format('embedded-opentype'),
+// 		 url('/assets/fonts/old/playtime.woff2') format('woff2'),
+// 		 url('/assets/fonts/old/playtime.woff') format('woff'),
+// 		 url('/assets/fonts/old/playtime.ttf') format('truetype'),
+// 		 url('/assets/fonts/old/playtime.svg#playtime') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+/* latin-ext */
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsKwHlCYWexZJCPRz1QQ0uKVU.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@font-face {
+    font-family: 'Growly Grin';
+    src: url('/assets/fonts/growly-grin.eot');
+    src: url('/assets/fonts/growly-grin.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/growly-grin.woff2') format('woff2'),
+         url('/assets/fonts/growly-grin.woff') format('woff'),
+         url('/assets/fonts/growly-grin.ttf') format('truetype'),
+         url('/assets/fonts/growly-grin.svg#growly_grinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1,h2,h3,h4,h5 {
+	font-weight: bold;
+}
+
+a {
+	-webkit-transitions: all 250ms cubic-bezier(.27, .86, .75, .9);
+		-moz-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+		 -ms-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+		  -o-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+			 transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+
+	color: color(red-dark);
+	text-decoration: none;
+
+	&:hover {
+		color: color(red-pure);
+		text-decoration: none;
+	}
+}
+
+.orkfont {
+	font-family: 'Growly Grin';
+}

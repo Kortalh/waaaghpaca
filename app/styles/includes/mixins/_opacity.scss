@@ -1,0 +1,8 @@
+
+// Sets the opacity with cross-browser support
+@mixin opacity($opacity) {
+	$opacity-ie: $opacity * 100;
+
+	opacity: $opacity;
+	filter: alpha(opacity=$opacity-ie); // IE8
+}

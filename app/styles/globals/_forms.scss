@@ -1,0 +1,54 @@
+/*
+input, textarea, button {
+	box-sizing: border-box;
+
+	border: 1px solid color(gray);
+	background: color(white);
+
+	&:focus {
+		outline: 1px solid color(red-dark);
+	}
+}
+
+input, textarea {
+	width: 100%;
+	padding: 0 5px;
+}
+
+textarea {
+	height: 100px;
+}
+
+
+button {
+	padding: 5px 25px;
+
+	border: 1px solid color(gray-dark);
+	border-bottom-width: 4px;
+
+	background: color(gray-lightest);
+
+	color: color(gray-darker);
+
+	&:hover {
+		border-color: color(gray-darker);
+
+		background: color(gray-light);
+
+		color: color(black);
+
+
+		@extend %background-transition;
+	}
+}
+
+
+.required {
+
+	&:before {
+		content: '*';
+		color: color(red);
+	}
+
+}
+*/

@@ -1,0 +1,12 @@
+
+// Adds a shaded vignette effect to an element
+%vignette {
+	background: rgba(0,0,0,0.2);
+	background:	-webkit-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(246,246,246,0.2) 33%, rgba(246,246,246,0.2) 66%, rgba(0,0,0,0.2) 100%);
+	background:	   -moz-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(246,246,246,0.2) 33%, rgba(246,246,246,0.2) 66%, rgba(0,0,0,0.2) 100%);
+	background:		-ms-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(246,246,246,0.2) 33%, rgba(246,246,246,0.2) 66%, rgba(0,0,0,0.2) 100%);
+	background:		 -o-linear-gradient(left, rgba(0,0,0,0.2) 0%, rgba(246,246,246,0.2) 33%, rgba(246,246,246,0.2) 66%, rgba(0,0,0,0.2) 100%);
+	background:		   -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.2)), color-stop(33%, rgba(246,246,246,0.2)), color-stop(66%, rgba(246,246,246,0.2)), color-stop(100%, rgba(0,0,0,0.2)));
+	background:			linear-gradient(to right, rgba(0,0,0,0.2) 0%, rgba(246,246,246,0.2) 33%, rgba(246,246,246,0.2) 66%, rgba(0,0,0,0.2) 100%);
+	filter:		progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}

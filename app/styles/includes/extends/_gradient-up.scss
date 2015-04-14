@@ -1,0 +1,9 @@
+
+// Adds a shaded downward-fading gradient effect
+%gradient-up {
+	background:	 -webkit-linear-gradient(bottom,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
+	background:		-moz-linear-gradient(bottom,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
+	background:		 -ms-linear-gradient(bottom,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
+	background:		  -o-linear-gradient(bottom,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
+	background:			 linear-gradient(to top,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
+}

@@ -1,0 +1,123 @@
+.contact {
+
+	.submit-wrapper {
+		text-align: right;
+	}
+
+	section#feedback {
+		display: none;
+		text-align: center;
+
+		max-width: 425px;
+		margin: 0.25em auto;
+	}
+
+	form {
+		max-width: 425px;
+		margin: 0 auto;
+
+		label {
+			display: block;
+			padding-left: 5px;
+		}
+
+		section {
+			padding: 0 0 15px 0;
+		}
+
+		.splitter {
+			width: 20px;
+		}
+
+		.disclaimer {
+			text-align: right;
+			font-size: 0.5em;
+		}
+
+	}
+
+
+	ul {
+		margin: 27px 0 0 0;
+		padding: 0;
+
+		font-size: 0.8em;
+
+		li {
+			list-style: none;
+		}
+
+		a {
+			padding-bottom: 4px;
+
+			display: inline-block;
+			@include size(100%);
+
+			&:before {
+				color: initial;
+				margin-right: 15px;
+
+				padding: 7px 7px 5px 7px;
+
+				border: 1px solid color(gray);
+
+				@extend %background-transition;
+			}
+
+			&[class^="icon-"]:hover:before {
+				color: color(white);
+			}
+
+			//===== Icon Background Hover Colors =====//
+			&.icon-phone:hover:before {
+				background-color: color(red);
+			}
+			&.icon-mail:hover:before {
+				background-color: color(email);
+			}
+			&.icon-link:hover:before {
+				background-color: color(pointhammered);
+			}
+			&.icon-twitter:hover:before {
+				background-color: color(twitter);
+			}
+			&.icon-facebook:hover:before {
+				background-color: color(facebook);
+			}
+			&.icon-gplus:hover:before {
+				background-color: color(gplus);
+			}
+
+		}
+	}
+
+}
+
+
+
+
+@include breakpoint('large') {
+
+	.contact {
+
+		ul {
+			font-size: 0.7em;
+		}
+
+	}
+
+}
+
+@include breakpoint('small') {
+
+	.contact {
+
+		ul {
+			max-width: 175px;
+			margin: 27px auto 0;
+			font-size: 0.8em;
+		}
+
+	}
+
+}

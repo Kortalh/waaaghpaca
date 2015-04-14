@@ -1,0 +1,7 @@
+%background-transition {
+	-webkit-transition: background 250ms cubic-bezier(.27,.86,.75,.9);
+	-moz-transition: background 250ms cubic-bezier(.27,.86,.75,.9);
+	-ms-transition: background 250ms cubic-bezier(.27,.86,.75,.9);
+	-o-transition: background 250ms cubic-bezier(.27,.86,.75,.9);
+	transition: background 250ms cubic-bezier(.27,.86,.75,.9);
+}

@@ -1,0 +1,7 @@
+
+// Sets width & height; both the same if only one value passed
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}

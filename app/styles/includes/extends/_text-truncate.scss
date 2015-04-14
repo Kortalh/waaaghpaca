@@ -1,0 +1,7 @@
+
+// Truncates text with an elipsis
+%text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

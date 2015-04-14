@@ -1,0 +1,25 @@
+.location {
+
+	.address {
+		margin: 15px 0;
+
+		a {
+			font-weight: bold;
+		}
+	}
+
+}
+
+
+//===== Medium Screens =====//
+@include breakpoint('medium') {
+
+	.location {
+
+		.other-maps {
+			display: none;
+		}
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+.success-message {
+	background-color: color(success);
+	border: 1px solid darken(color(success), 20%);
+}
+.failure-message {
+	background-color: color(failure);
+	border: 1px solid darken(color(failure), 20%);
+}

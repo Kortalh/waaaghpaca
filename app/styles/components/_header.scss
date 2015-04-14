@@ -1,0 +1,114 @@
+header {
+	padding: 20px 0 35px;
+	color: color(black);
+
+	.logo {
+		background-image: url('/assets/images/logo_color.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		height: 150px;
+	}
+
+	.title {
+		font-family: 'Growly Grin';
+		font-size: 130px;
+		text-align: center;
+
+		@include absolute(0,0,0,0);
+	}
+
+}
+
+/*
+header {
+	@extend %flexwrap;
+
+	padding: 20px 0 35px;
+	position: relative;
+
+	border-bottom: 1px solid black;
+
+	&:after {
+		content: ' ';
+
+		@extend %gradient-down;
+
+		@include size(100%, 65px);
+		@include absolute(auto, auto, -65px, 0);
+
+	}
+
+	.title {
+		font-family: 'monsterama';
+		font-size: 130px;
+		text-align: center;
+		padding-top: 50px;
+		z-index: -1;
+
+		@include absolute(0,0,0,0);
+
+		margin-left: -5px;
+
+		span {
+			padding-right: 100px;
+		}
+
+	}
+	.logo {
+		flex: 1;
+		background-image: url('../img/logo_color.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		height: 150px;
+	}
+
+}
+
+//===== Small Screens =====//
+@include breakpoint('small') {
+
+	header {
+
+		.title {
+			font-size: 80px;
+			margin-left: 0;
+			padding-top: 45px;
+
+			span {
+				padding-right: 65px;
+			}
+		}
+		.logo {
+			height: 100px;
+		}
+
+	}
+
+}
+
+//===== Tiny Screens =====//
+@include breakpoint('tiny') {
+
+	header {
+
+		.title {
+			font-size: 50px;
+			padding-top: 35px;
+
+			span {
+				padding-right: 35px;
+			}
+		}
+
+		.logo {
+			height: 60px;
+		}
+
+	}
+
+}
+*/

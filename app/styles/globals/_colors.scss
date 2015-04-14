@@ -1,0 +1,44 @@
+
+$colors: (
+	//===== Color Palette =====//
+
+	white:			#ffffff,
+	gray-lightest:	#eeeeee,
+	gray-lighter:	#dddddd,
+	gray-light:		#cccccc,
+	gray:			#888888,
+	gray-dark: 		#444444,
+	gray-darker:	#222222,
+	black:			#000000,
+
+	red-pure:		#ff0000,
+	red-faded:		#ffdddd,
+	red-light:		#ff4e4e,
+	red:			#e60707,
+	red-dark:		#8d0000,
+
+
+	//===== Branding Colors =====//
+	facebook:		#3b5998,
+	twitter:		#55acee,
+	gplus:			#dd4b39,
+	pointhammered:	#00c775,
+
+	email:			#338833,
+	phone:			#e60707, // red, above
+
+	//===== UI Colors =====//
+	failure:		#ffdddd,
+	success:		#cceebb
+
+);
+
+
+@function color($key) {
+	@if map-has-key($colors, $key) {
+		@return map-get($colors, $key);
+	}
+
+	@warn "Unknown `#{$key}` in $colors.";
+	@return null;
+}

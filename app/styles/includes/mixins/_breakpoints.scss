@@ -1,0 +1,21 @@
+
+$breakpoints: (
+	'tiny':		( max-width: 375px	),
+	'small':	( max-width: 600px	),
+	'medium':	( max-width: 700px	),
+	'large':	( max-width: 800px	),
+	'xlarge':	( min-width: 1200px )
+);
+
+@mixin breakpoint($name) {
+
+	@if map-has-key($breakpoints, $name) {
+		@media #{inspect(map-get($breakpoints, $name))} {
+			@content;
+		}
+	}
+	@else {
+		@warn "Couldn't find a breakpoint named `#{$name}`.";
+	}
+
+}

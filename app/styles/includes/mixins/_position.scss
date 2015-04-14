@@ -1,0 +1,26 @@
+
+// Sets the positions, in order. Default to auto if not specified.
+@mixin position($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+// Sets to absolute with the given positions.
+@mixin absolute($top, $right, $bottom, $left) {
+	position: absolute;
+	@include position($top, $right, $bottom, $left);
+}
+
+// Sets to fixed with the given positions.
+@mixin fixed($top, $right, $bottom, $left) {
+	position: fixed;
+	@include position($top, $right, $bottom, $left);
+}
+
+// Sets to relative with the given positions.
+@mixin relative($top, $right, $bottom, $left) {
+	position: relative;
+	@include position($top, $right, $bottom, $left);
+}

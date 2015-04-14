@@ -1,0 +1,15 @@
+.map-container {
+
+	.map-canvas {
+		@include size(100%, 250px);
+
+		background-color: color(gray-lighter);
+	}
+
+	.map-link {
+		font-size: 0.6em;
+		text-align: right;
+		margin-top: 5px;
+	}
+
+}

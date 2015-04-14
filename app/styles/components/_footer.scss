@@ -1,0 +1,67 @@
+footer {
+	@extend %flexwrap;
+
+	position: relative;
+
+	font-size: 0.7em;
+
+	border-top: 1px solid color(gray-dark);
+	margin-top: 20px;
+	padding: 10px 30px 50px;
+
+
+	ul,li {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+
+		&:after {
+			content: '\a0\b7';
+			color: color(gray-light);
+		}
+		&:last-child:after {
+			content: '';
+		}
+
+	}
+
+	.left, .right {
+		flex: 1;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+}
+
+
+
+//===== Small Screens =====//
+@include breakpoint('medium') {
+
+	footer {
+
+		li {
+			display: block;
+
+			&:after {
+				display: none;
+			}
+		}
+
+	}
+
+}
+
+//===== Tiny Screens =====//
+@include breakpoint('tiny') {
+
+	footer {
+		font-size: 0.6em;
+	}
+
+}
