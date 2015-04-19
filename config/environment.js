@@ -5,6 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'wpca',
     environment: environment,
     baseURL: '/',
+    apiURL: '/api',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -25,6 +26,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.apiURL = 'http://server.kortalh.com/wpca/public/api';
   }
 
   if (environment === 'test') {
@@ -53,7 +55,7 @@ module.exports = function(environment) {
     'default-src': "'none'",
     'script-src': "'self' 'unsafe-eval' server.kortalh.com:35729 http://*.googleapis.com http://maps.gstatic.com",
     'font-src': "'self' data: http://fonts.gstatic.com",
-    'connect-src': "'self' ws://server.kortalh.com:35729 http://maps.gstatic.com",
+    'connect-src': "'self' http://server.kortalh.com ws://server.kortalh.com:35729 http://maps.gstatic.com",
     'img-src': "'self' http://*.googleapis.com http://maps.gstatic.com http://csi.gstatic.com",
     'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com http://maps.gstatic.com",
     'media-src': "'self'"

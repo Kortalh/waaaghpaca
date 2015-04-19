@@ -1,0 +1,54 @@
+<div class="container home">
+	<h2>Contact</h2>
+	<p class="lead">
+		Have a question? Send it in! The most direct way to contact
+		the <span class="orkfont">Waaaghpaca</span> boyz is by using the form below.
+	</p>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-8">
+			<h4>Send a Message</h4>
+
+			<form class="text-left">
+
+				<div class="row">
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="fromEmail">Email</label>
+						{{input type="email" class="form-control" placeholder="therodge@example.com" value=fromEmail}}
+						<!-- <input type="email" class="form-control" id="fromEmail" placeholder="therodge@example.com"> -->
+					</div>
+					<div class="form-group col-xs-12 col-sm-6">
+						<label for="fromName">Name</label>
+						<input type="text" class="form-control" id="fromName" placeholder="The Rodge">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="message">Message</label>
+						<textarea id="message" rows="4" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-right">
+						<button class="btn btn-default" {{action "sendMail" on="click"}}>Send</button>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<div class="col-xs-12 col-sm-4">
+			<h4>Contact Links</h4>
+
+			<ul>
+				<li><a class="icon-phone" href="tel:555-123-4567">(555) 123-4567</a></li>
+				<li><a class="icon-mail" href="mailto:waaaghpaca@gmail.com">Email</a></li>
+				<li><a class="icon-twitter" href="#" target="_new">Twitter</a></li>
+				<li><a class="icon-facebook" href="#" target="_new">Facebook</a></li>
+				<li><a class="icon-gplus" href="#" target="_new">Google+</a></li>
+				<li><a class="icon-link" href="http://pointhammered.com" target="_new">Point Hammered</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
