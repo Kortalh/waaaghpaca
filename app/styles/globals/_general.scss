@@ -1,9 +1,12 @@
 
-.success-message {
-	background-color: color(success);
-	border: 1px solid darken(color(success), 20%);
+body,html {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 12pt;
+	min-height: 100%;
+	text-align: center;
 }
-.failure-message {
-	background-color: color(failure);
-	border: 1px solid darken(color(failure), 20%);
+
+html {
+	@extend %inset-shadow;
+	overflow-y: scroll;
 }

@@ -23,21 +23,24 @@
 // 	font-style: normal;
 // }
 
-/* latin-ext */
+
 @font-face {
-	font-family: 'Libre Baskerville';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsKwHlCYWexZJCPRz1QQ0uKVU.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK5Rby8KfwQsaipLBqMCVNtM.woff) format('woff');
 }
-/* latin */
 @font-face {
-	font-family: 'Libre Baskerville';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://fonts.gstatic.com/s/librebaskerville/v4/pR0sBQVcY0JZc_ciXjFsK6Ucnt8gjcHpqyffjHeZWDA.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(http://fonts.gstatic.com/s/librebaskerville/v4/kH7K4InNTm7mmOXXjrA5v6y7YSlLHrWsjpD3RcrnyFM.woff2) format('woff2'), url(http://fonts.gstatic.com/s/librebaskerville/v4/kH7K4InNTm7mmOXXjrA5vz8SLKRGgamuUl1hIefMyNI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5eUHi-3yDrzgLLsrfaKVF9k.woff2) format('woff2'), url(http://fonts.gstatic.com/s/librebaskerville/v4/QHIOz1iKF3bIEzRdDFaf5dgliI79_bmRXH6crmREtCo.woff) format('woff');
 }
 
 
@@ -56,21 +59,24 @@
 
 
 h1,h2,h3,h4,h5 {
-	font-weight: bold;
+	font-weight: 700;
 }
 
-a {
-	-webkit-transitions: all 250ms cubic-bezier(.27, .86, .75, .9);
-		-moz-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
-		 -ms-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
-		  -o-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
-			 transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+a,
+.navbar-default .navbar-nav > li > a {
+	@extend %transition-all;
 
 	color: color(red-dark);
 	text-decoration: none;
 
-	&:hover {
+	&:hover,
+	&:active {
 		color: color(red-pure);
+		text-decoration: none;
+	}
+
+	&:focus {
+		color: color(red-dark);
 		text-decoration: none;
 	}
 }

@@ -7,3 +7,11 @@
 	background:		  -o-linear-gradient(bottom,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
 	background:			 linear-gradient(to top,	rgba( color(gray-light), 0.75) 0%,	rgba( color(gray-light), 0.25) 50%,	rgba( color(gray-light), 0) 100%);
 }
+
+%gradient-up-soft {
+	background:	 -webkit-linear-gradient(bottom,	rgba( color(gray-light), 0.33) 0%,	rgba( color(gray-light), 0.15) 50%, rgba( color(gray-light), 0) 100%);
+	background:		-moz-linear-gradient(bottom,	rgba( color(gray-light), 0.33) 0%,	rgba( color(gray-light), 0.15) 50%, rgba( color(gray-light), 0) 100%);
+	background:		 -ms-linear-gradient(bottom,	rgba( color(gray-light), 0.33) 0%,	rgba( color(gray-light), 0.15) 50%, rgba( color(gray-light), 0) 100%);
+	background:		  -o-linear-gradient(bottom,	rgba( color(gray-light), 0.33) 0%,	rgba( color(gray-light), 0.15) 50%, rgba( color(gray-light), 0) 100%);
+	background:			 linear-gradient(to top,	rgba( color(gray-light), 0.33) 0%,	rgba( color(gray-light), 0.15) 50%, rgba( color(gray-light), 0) 100%);
+}

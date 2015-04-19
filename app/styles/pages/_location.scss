@@ -4,22 +4,8 @@
 		margin: 15px 0;
 
 		a {
-			font-weight: bold;
+			font-weight: 700;
 		}
-	}
-
-}
-
-
-//===== Medium Screens =====//
-@include breakpoint('medium') {
-
-	.location {
-
-		.other-maps {
-			display: none;
-		}
-
 	}
 
 }

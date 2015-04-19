@@ -2,8 +2,6 @@
 //===== Globals =====//
 @import 'globals/colors';
 @import 'globals/fonts';
-@import 'globals/forms';
-@import 'globals/tables';
 @import 'globals/general';
 @import 'globals/icons';
 
@@ -12,7 +10,6 @@
 @import 'includes/extends';
 
 //===== Components =====//
-@import 'components/layout';
 @import 'components/header';
 @import 'components/nav';
 @import 'components/footer';
@@ -29,16 +26,3 @@
 @import 'pages/rules';
 @import 'pages/location';
 @import 'pages/contact';
-
-
-
-body,html {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 12pt;
-	min-height: 100%;
-	text-align: center;
-}
-
-html {
-	@extend %inset-shadow;
-}

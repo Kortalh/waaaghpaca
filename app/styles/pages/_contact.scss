@@ -61,7 +61,7 @@
 
 				border: 1px solid color(gray);
 
-				@extend %background-transition;
+				@extend %transition-background;
 			}
 
 			&[class^="icon-"]:hover:before {

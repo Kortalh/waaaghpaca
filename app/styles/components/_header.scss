@@ -1,6 +1,20 @@
 header {
-	padding: 20px 0 35px;
+	margin: 0 auto;
 	color: color(black);
+
+	.title,
+	.logo,
+	.number {
+		display: inline-block;
+	}
+
+	.title {
+		font-family: 'Growly Grin';
+		font-size: 130px;
+		// text-align: center;
+
+		// @include absolute(0,0,0,0);
+	}
 
 	.logo {
 		background-image: url('/assets/images/logo_color.png');
@@ -9,106 +23,45 @@ header {
 		background-position: center;
 
 		height: 150px;
+		width: 109px;
+
+		margin-bottom: -32px;
 	}
 
-	.title {
-		font-family: 'Growly Grin';
-		font-size: 130px;
-		text-align: center;
-
-		@include absolute(0,0,0,0);
-	}
-
-}
-
-/*
-header {
-	@extend %flexwrap;
-
-	padding: 20px 0 35px;
-	position: relative;
-
-	border-bottom: 1px solid black;
-
-	&:after {
-		content: ' ';
-
-		@extend %gradient-down;
-
-		@include size(100%, 65px);
-		@include absolute(auto, auto, -65px, 0);
-
-	}
-
-	.title {
-		font-family: 'monsterama';
-		font-size: 130px;
-		text-align: center;
-		padding-top: 50px;
-		z-index: -1;
-
-		@include absolute(0,0,0,0);
-
-		margin-left: -5px;
-
-		span {
-			padding-right: 100px;
-		}
-
-	}
-	.logo {
-		flex: 1;
-		background-image: url('../img/logo_color.png');
+	.number {
+		background-image: url('/assets/images/number.png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
 
-		height: 150px;
+		height: 110px;
+		width: 121px;
+
+		margin-bottom: -10px;
 	}
 
 }
 
-//===== Small Screens =====//
-@include breakpoint('small') {
 
+
+@include breakpoint('lg') {
 	header {
 
 		.title {
-			font-size: 80px;
-			margin-left: 0;
-			padding-top: 45px;
-
-			span {
-				padding-right: 65px;
-			}
-		}
-		.logo {
-			height: 100px;
-		}
-
-	}
-
-}
-
-//===== Tiny Screens =====//
-@include breakpoint('tiny') {
-
-	header {
-
-		.title {
-			font-size: 50px;
-			padding-top: 35px;
-
-			span {
-				padding-right: 35px;
-			}
+			font-size: 102px;
 		}
 
 		.logo {
-			height: 60px;
+			height: 120px;
+			width: 87px;
+			margin-bottom: -30px;
+		}
+
+		.number {
+			height: 90px;
+			width: 99px;
+			margin-bottom: -12px;
 		}
 
 	}
-
 }
-*/

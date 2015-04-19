@@ -1,45 +1,66 @@
 
-<header>
-	<div class="container text-center row orkfont">
-		<div class="logo"></div>
-		<div class="title">Waaaghpaca VI</div>
-	</div>
+<header class="container text-center orkfont">
+	<div class="title">Waaaghpaca</div>
+	<div class="logo"></div>
+	<div class="number"></div>
 </header>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default" role="navigation">
+
 	<div class="container">
+
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
 		</div>
 
-		<div id="navbar" class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="/">Home</a></li>
+				<li>{{#link-to 'home'}}Home{{/link-to}}</li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Event <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="schedule">Schedule</a></li>
+						<li><a href="rules">Rules</a></li>
+						<li><a href="roster">Roster</a></li>
+					</ul>
+				</li>
+
+				<li><a href="results">Results</a></li>
+				<li>{{#link-to 'location'}}Location{{/link-to}}</li>
+				<li><a href="contact">Contact</a></li>
 				<li><a href="register">Register</a></li>
 				<li><a href="raffle">Raffle</a></li>
-				<li><a href="schedule">Schedule</a></li>
-				<li><a href="participants">Participants</a></li>
-				<li><a href="results">Results</a></li>
-				<li><a href="rules">Rules</a></li>
-				<li><a href="location">Location</a></li>
-				<li><a href="contact">Contact</a></li>
 			</ul>
 		</div>
+
 	</div>
+
 </nav>
 
 {{outlet}}
 
 <footer class="footer">
-	<div class="container row">
-		<div class="col-xs-12 text-right">
-			Register
-			Contact
-			Location
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 text-left">
+				<ul>
+					<li>201 Foxfire Drive</li>
+					<li>Waupaca, WI</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-6 text-right">
+				<ul>
+					<li>Register</li>
+					<li>Contact</li>
+					<li>{{#link-to 'location'}}Location{{/link-to}}</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </footer>

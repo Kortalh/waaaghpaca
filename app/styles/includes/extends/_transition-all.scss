@@ -1,0 +1,7 @@
+%transition-all {
+	-webkit-transitions: all 250ms cubic-bezier(.27, .86, .75, .9);
+		-moz-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+		 -ms-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+		  -o-transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+			 transition: all 250ms cubic-bezier(.27, .86, .75, .9);
+}
