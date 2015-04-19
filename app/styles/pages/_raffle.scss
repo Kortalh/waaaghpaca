@@ -1,0 +1,27 @@
+.raffle {
+
+	h4 {
+		margin-top: 30px;
+	}
+
+	ol {
+		margin: 0 auto;
+		max-width: 475px;
+
+		& > li {
+			text-align: left;
+		}
+	}
+
+	.content {
+		margin: 0 auto;
+		max-width: 450px;
+		text-align: left;
+		text-indent: 30px;
+	}
+
+	.closer {
+		margin-top: 10px;
+	}
+
+}
