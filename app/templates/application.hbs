@@ -24,9 +24,9 @@
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Event <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li><a href="schedule">Schedule</a></li>
-						<li><a href="rules">Rules</a></li>
-						<li><a href="roster">Roster</a></li>
+						<li>{{#link-to 'schedule'}}Schedule{{/link-to}}</li>
+						<li>{{#link-to 'rules'}}Rules{{/link-to}}</li>
+						<li>{{#link-to 'roster'}}Roster{{/link-to}}</li>
 						<li role="presentation" class="divider"></li>
 						<li>{{#link-to 'location'}}Location{{/link-to}}</li>
 					</ul>
@@ -34,7 +34,7 @@
 
 				<li>{{#link-to 'raffle'}}Raffle{{/link-to}}</li>
 				<li>{{#link-to 'register'}}Register{{/link-to}}</li>
-				<li><a href="results">Results</a></li>
+				<li>{{#link-to 'results'}}Results{{/link-to}}</li>
 			</ul>
 		</div>
 
@@ -58,7 +58,7 @@
 				<ul>
 					<li>{{#link-to 'location'}}Location{{/link-to}}</li>
 					<li>{{#link-to 'register'}}Register{{/link-to}}</li>
-					<li>Contact</li>
+					<li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
 				</ul>
 			</div>
 		</div>

@@ -5,22 +5,53 @@
 	border-width: 0;
 	border-bottom: 1px solid color(gray-light);
 
-	& .navbar-nav > li > a {
-		background-color: transparent;
-		font-weight: bold;
+	text-align: left;
 
-		padding: 15px 40px;
+	.navbar-nav {
 
-		&:hover {
-			background-color: color(gray-lightest);
+		.open {
+
+			& > a,
+			& > a:focus,
+			& > a:hover {
+				background-color: color(gray-light);
+			}
+
 		}
 
-		&.active {
-			border-bottom: 0;
-			color: color(white);
-			background-color: color(red-subdued);
+		& > li > a {
+			background-color: transparent;
+			font-weight: bold;
+
+			padding: 15px 40px;
+
+			&:hover {
+				color: color(red-dark);
+				background-color: color(gray-lightest);
+			}
+
+			&.active {
+				border-bottom: 0;
+				color: color(white);
+				background-color: color(red-subdued);
+			}
 		}
+
+		.dropdown-menu > li > a,
+		.open .dropdown-menu > li > a {
+			color: color(red-dark);
+
+			&:hover {
+				background-color: color(gray-lightest);
+			}
+			&.active {
+				color: color(white);
+				background-color: color(red-subdued);
+			}
+		}
+
 	}
+
 }
 
 @include breakpoint('lg') {
