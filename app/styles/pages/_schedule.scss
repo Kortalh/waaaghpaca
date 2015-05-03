@@ -1,16 +1,38 @@
 .schedule {
 
+	h3.big-top {
+		margin-top: 2em;
+	}
+	h4 {
+		margin: 2em 0 1em;
+	}
+
 	dl {
-		max-width: 650px;
+		max-width: 750px;
 		margin: 0 auto;
 
 		dt {
 			font-weight: 700;
-			margin-top: 30px;
+			margin-top: 20px;
 		}
 
 		dd {
 			font-style: italic;
+		}
+
+		&.dl-horizontal {
+
+			max-width: 550px;
+
+			dt {
+				margin-top: 0;
+				font-size: 0.9em;
+			}
+			dd {
+				margin-bottom: 10px;
+				text-align: left;
+			}
+
 		}
 	}
 
