@@ -1,0 +1,50 @@
+
+form {
+
+	.required {
+		position: relative;
+
+		padding-left: 0.6em;
+
+		&:before {
+			content: '*';
+			color: color(red-pure);
+			font-size: 0.8em;
+
+			@include absolute(0.1em, auto, auto, 0);
+		}
+	}
+
+	.form-control, .btn {
+		border-radius: 0;
+		@extend %transition-all;
+
+		&:focus {
+			border-color: color(red-subdued);
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+
+	.btn {
+
+		&:focus	{
+			background-color: transparent;
+			border-color: color(gray-light);
+		}
+		&:hover {
+			background-color: color(red-faded);
+			border-color: color(red-faded-dark);
+			outline: none;
+		}
+		&:active,
+		&:active:focus {
+			background-color: color(red-faded-dark);
+			border-color: color(red-light);
+			outline: none;
+		}
+
+	}
+
+}

@@ -1,7 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-	myProp: 'things',
+
+	// Holds
+	feedback: null,
 
 	actions: {
 		sendMail: function() {
@@ -11,21 +13,22 @@ export default Ember.Controller.extend({
 			Ember.$.post(
 				environment.apiURL + '/send_mail',
 				{
-					prop: this.myProp,
-					success: false
+					type:		'contact',
+					from:		this.contactEmail,
+					name:		this.contactName,
+					message:	this.contactMessage
 				}
 			).done(
 				Ember.$.proxy(this.handleMailSent, this)
 			).fail(
 				Ember.$.proxy(this.handleMailError, this)
 			);
+
 		}
 	},
 
 	handleMailSent: function(unparsedResponse) {
 		var response = JSON.parse(unparsedResponse);
-
-		console.log('response:', response);
 
 		if ( !response.success || response.success === "false" ) {
 			this.handleMailError(null, 'server error', response.message);
@@ -33,6 +36,9 @@ export default Ember.Controller.extend({
 	},
 
 	handleMailError: function(jqXHR, status, message) {
-		console.error('sendMail error:', {status: status, message: message});
+
+		this.set('feedback', message);
+
+		Ember.Logger.error('sendMail error:', {status: status, message: message});
 	}
 });

@@ -1,4 +1,4 @@
-<div class="container home">
+<div class="container contact">
 	<h2>Contact</h2>
 	<p class="lead">
 		Have a question? Send it in! The most direct way to contact
@@ -9,23 +9,27 @@
 		<div class="col-xs-12 col-sm-8">
 			<h4>Send a Message</h4>
 
-			<form class="text-left">
+			{{#if feedback}}
+			<div class="alert alert-danger">{{feedback}}</div>
+			{{/if}}
+
+			<form>
 
 				<div class="row">
 					<div class="form-group col-xs-12 col-sm-6">
-						<label for="fromEmail">Email</label>
-						{{input type="email" class="form-control" placeholder="therodge@example.com" value=fromEmail}}
-						<!-- <input type="email" class="form-control" id="fromEmail" placeholder="therodge@example.com"> -->
+						<label class="required" for="fromEmail">Email</label>
+						{{input type="email" class="form-control" placeholder="rodge@example.com" value=fromEmail}}
 					</div>
 					<div class="form-group col-xs-12 col-sm-6">
-						<label for="fromName">Name</label>
-						<input type="text" class="form-control" id="fromName" placeholder="The Rodge">
+						<label class="required" for="fromName">Name</label>
+						{{input type="text" class="form-control" placeholder="The Rodge" value=fromName}}
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<label for="message">Message</label>
+						<label class="required" for="message">Message</label>
 						<textarea id="message" rows="4" class="form-control"></textarea>
+						<div class="disclaimer required pull-right">Required field</div>
 					</div>
 				</div>
 				<div class="row">
