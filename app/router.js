@@ -11,7 +11,7 @@ export default Router.map(function() {
   this.resource('rules');
   this.resource('roster');
   this.resource('location');
-  this.resource('raffle');
+  this.resource('giveaway');
   this.resource('register');
   this.resource('results');
   this.resource('contact');
