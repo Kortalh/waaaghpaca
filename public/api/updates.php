@@ -1,6 +1,7 @@
 <?php
-header('Access-Control-Allow-Origin: http://server.kortalh.com:4200');
+require 'redbean/rb.php';
 require 'config.php';
+header('Access-Control-Allow-Origin: http://server.kortalh.com:4200');
 
 
 // Contains our response data
