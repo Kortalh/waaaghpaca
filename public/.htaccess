@@ -1,0 +1,9 @@
+#Redirect 302 / http://gorcus.com/cgi/waaaghpaca
+
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]
