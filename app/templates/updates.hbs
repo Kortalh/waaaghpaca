@@ -1,0 +1,31 @@
+<div class="container home">
+	<p class="lead">
+		<span class="orkfont">WaAagHpaca's</span> majesty cannot be conveyed through mere words, so we shall not
+		attempt it. To learn of this weekend of battle and brotherhood, it must be experienced, plain and simple.
+	</p>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-8 news">
+			<h4>Latest News</h4>
+
+			<div>
+				{{#each update in model}}
+				<div class="date">{{update.timestamp}}</div>
+				<div class="content">{{update.content}}</div>
+				{{/each}}
+			</div>
+
+
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<h4>Our Sponsors</h4>
+
+			<a href="http://www.pointhammered.com">
+				<img src="/assets/images/sponsors/pointhammered.jpg" alt="Pointhammered Podcast">
+			</a>
+
+		</div>
+	</div>
+</div>
+
+{{outlet}}
