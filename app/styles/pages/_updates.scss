@@ -1,21 +1,34 @@
 
-.home {
+.updates {
 
 	.news {
 
-		h4 {}
+		.update {
+			margin-bottom: 4em;
 
-		.date {
-			text-align: left;
-			font-weight: bold;
-			font-size: 0.7em;
-			margin-bottom: 1em;
+			&:not(:last-child):after {
+				content: '';
+				display: block;
+				position: relative;
+				left: 33%;
+				width: 33%;
+				bottom: -2em;
+				border-bottom: 1px solid color(gray-light);
+			}
+
+			.date {
+				text-align: left;
+				font-weight: bold;
+				font-size: 0.7em;
+				margin-bottom: 1em;
+			}
+
+			.content {
+				text-align: left;
+				text-indent: 2em;
+			}
 		}
 
-		.content {
-			text-align: left;
-			text-indent: 2em;
-		}
 
 	}
 

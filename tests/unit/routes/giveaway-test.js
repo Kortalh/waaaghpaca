@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:raffle', {
+moduleFor('route:giveaway', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
