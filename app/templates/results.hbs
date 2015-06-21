@@ -6,8 +6,10 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-6">Yearly</div>
-		<div class="col-xs-6">Ironman</div>
+		<div class="col-xs-6">{{#link-to 'results.yearly'}}Yearly{{/link-to}}</div>
+		<div class="col-xs-6">{{#link-to 'results.ironman'}}Ironman{{/link-to}}</div>
 	</div>
+
+	{{outlet}}
 
 </div>
