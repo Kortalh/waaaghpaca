@@ -1,0 +1,35 @@
+.results {
+
+	select.form-control {
+		display: inline;
+		width: 5.5em;
+		font-size: 1.1em;
+	}
+
+	table {
+
+		font-size: 0.8em;
+
+		.player,
+		.army,
+		.team,
+		.track {
+			text-align: left;
+		}
+		.painting,
+		.sportsmanship,
+		.battle,
+		.hobbyhero,
+		.strength,
+		.overall {
+			text-align: center;
+		}
+
+		.team .null {
+			font-size: 0.8em;
+			font-style: italic;
+		}
+
+	}
+
+}

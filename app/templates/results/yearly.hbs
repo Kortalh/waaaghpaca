@@ -1,1 +1,37 @@
-Yearly
+Showing results for
+<select class="form-control">
+	<option value="2015">2015</option>
+</select>.
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th class="player">Player</th>
+			<th class="team">Team</th>
+			<th class="army">Army</th>
+			<th class="track">Track</th>
+			<th class="painting">Painting</th>
+			<th class="sportsmanship">Sportsmanship</th>
+			<th class="battle">Battle</th>
+			<th class="hobbyhero">Hobby<br>Hero</th>
+			<th class="strength">Strength</th>
+			<th class="overall">Overall</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{#each entry in model}}
+		<tr>
+			<td class="player">{{entry.player}}</td>
+			<td class="team">{{#if entry.team}}{{entry.team}}{{else}}<span class="null">None</span>{{/if}}</td>
+			<td class="army">{{entry.army}}</td>
+			<td class="track">{{entry.track}}</td>
+			<td class="painting">{{entry.score_paint}}</td>
+			<td class="sportsmanship">{{entry.score_sportsman}}</td>
+			<td class="battle">{{entry.score_battle}}</td>
+			<td class="hobbyhero">{{entry.score_hobby}}</td>
+			<td class="strength">{{entry.score_strength}}</td>
+			<td class="overall">{{entry.score_overall}}</td>
+		</tr>
+	{{/each}}
+	</tbody>
+</table>
