@@ -9,11 +9,15 @@ header {
 	}
 
 	.title {
+		position: relative;
 		font-family: 'Growly Grin';
 		font-size: 130px;
-		// text-align: center;
 
-		// @include absolute(0,0,0,0);
+		.dates {
+			@include absolute(auto, 5%, 10%, auto);
+			font-size: 14px;
+		}
+
 	}
 
 	.logo {
@@ -49,6 +53,11 @@ header {
 
 		.title {
 			font-size: 102px;
+
+			.date {
+				font-size: 13px;
+			}
+
 		}
 
 		.logo {
@@ -61,6 +70,51 @@ header {
 			height: 90px;
 			width: 99px;
 			margin-bottom: -12px;
+		}
+
+	}
+}
+
+
+
+@include breakpoint('sm') {
+	header {
+
+		.title {
+			font-size: 70px;
+
+			.dates {
+				bottom: 6%;
+				font-size: 13px;
+			}
+		}
+
+		.logo {
+			height: 90px;
+			width: 66px;
+			margin-bottom: -25px;
+		}
+
+		.number {
+			height: 70px;
+			width: 77px;
+		}
+
+	}
+}
+
+
+@include breakpoint('xs') {
+	header {
+
+		.title {
+			margin: 0.2em 0 -0.2em 0;
+			display: block;
+
+			.dates {
+				top: 6%;
+				right: 25%;
+			}
 		}
 
 	}
